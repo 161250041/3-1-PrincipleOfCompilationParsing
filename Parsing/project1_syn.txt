@@ -1,0 +1,71 @@
+0) S -> word = E ; S 
+1) E -> T E2 
+2) T -> F T2 
+3) F -> num 
+4) T2 -> ε
+5) E2 -> ε
+6) S -> word = E ; S 
+7) E -> T E2 
+8) T -> F T2 
+9) F -> num 
+10) T2 -> ε
+11) E2 -> ε
+12) S -> while ( C ) { S } S 
+13) C -> D C' 
+14) D -> H D' 
+15) H -> K COP K 
+16) K -> word 
+17) COP -> > 
+18) K -> num 
+19) D' -> ε
+20) C'' -> ε
+21) S -> if ( C ) { S } else { S } 
+22) C -> D C' 
+23) D -> H D' 
+24) H -> K COP K 
+25) K -> word 
+26) COP -> < 
+27) K -> num 
+28) D' -> ε
+29) C' -> || D C' 
+30) D -> H D' 
+31) H -> K COP K 
+32) K -> word 
+33) COP -> > 
+34) K -> num 
+35) D' -> ε
+36) C'' -> ε
+37) S -> word = E ; S 
+38) E -> T E2 
+39) T -> F T2 
+40) F -> word 
+41) T2 -> ε
+42) E2 -> E1 E2 
+43) E1 -> + T 
+44) T -> F T2 
+45) F -> num 
+46) T2 -> ε
+47) E2 -> ε
+48) S -> ε
+49) S -> word = E ; S 
+50) E -> T E2 
+51) T -> F T2 
+52) F -> word 
+53) T2 -> ε
+54) E2 -> E1 E2 
+55) E1 -> - T 
+56) T -> F T2 
+57) F -> num 
+58) T2 -> ε
+59) E2 -> ε
+60) S -> word = E ; S 
+61) E -> T E2 
+62) T -> F T2 
+63) F -> word 
+64) T2 -> T1 T2 
+65) T1 -> * F 
+66) F -> num 
+67) T2 -> ε
+68) E2 -> ε
+69) S -> ε
+70) S -> ε
